@@ -1,0 +1,35 @@
+.comtainer {
+	overflow: auto;
+	max-width: 960px;
+
+}
+#title-box {
+	color: #d5cdf4;
+	padding: 15px;
+	}
+
+#crystal-box {
+	margin-bottom: 20px;
+
+}
+
+.crystal {
+	max-height: 125px;
+	max-width: 200px;
+}
+
+#crysthree {
+	margin-left: 20px;
+}
+
+#crysfour {
+	margin-left: 35px;
+}
+
+#record-box {
+	background background-color: #fff;
+}
+
+p {
+	padding: 15px;
+}
