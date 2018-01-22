@@ -15,7 +15,7 @@ body {
 
 }
 #title-box {
-	color: #d5cdf4;
+	color: #6422d6;
 	padding: 15px;
 	}
 
@@ -32,6 +32,7 @@ body {
 .crystal {
 	max-height: 125px;
 	max-width: 125px;
+	background-color: #FFBFEF;
 }
 
 #crysthree {
@@ -46,6 +47,7 @@ body {
 #score-box {
 	max-width: 200px;
 	margin-right: 15px;
+	color: #6422d6;
 	background-color: #FFBFEF;
 	border-radius: 25px;
 	text-align: center;
@@ -55,18 +57,30 @@ body {
 #goal-box {
 	max-width: 200px;
 	margin-left: 15px;
+	color: #6422d6;
 	background-color: #FFBFEF;
 	border-radius: 25px;
 	text-align: center;
 }
 #record-box {
+	color: #6422d6;
 	background-color: #FFBFEF;
 	max-width: 200px;
 	margin-top: 20px;
-	padding-top: 15px;
+	padding: 15px;
 	border-radius: 25px;
 }
 
+h2,
+#score,
+#goal	{
+	font-size: 35px;
+}
+h3 {
+	text-align: center;
+}
+
 p {
-	padding: 15px;
+	font-size: 28px;
+	padding: 1px;
 }
