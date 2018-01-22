@@ -1,6 +1,17 @@
-.comtainer {
+body {
+	background-image: url("../images/watercolor.png");
+}
+
+#big-container {
 	overflow: auto;
+	margin: auto;
+	margin-top: 50px;
 	max-width: 960px;
+	padding-bottom: 60px;
+	padding-top: 15px;
+	border-radius: 25px;
+	background-image: url("../images/watercolor2.png");
+
 
 }
 #title-box {
@@ -9,13 +20,18 @@
 	}
 
 #crystal-box {
+	width: 650px;
+	background-color: #FFBFEF;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	margin-bottom: 20px;
-
+	border-radius: 25px;
+	overflow: auto;
 }
 
 .crystal {
 	max-height: 125px;
-	max-width: 200px;
+	max-width: 125px;
 }
 
 #crysthree {
@@ -24,10 +40,31 @@
 
 #crysfour {
 	margin-left: 35px;
+	padding-right: 25px;
 }
 
+#score-box {
+	max-width: 200px;
+	margin-right: 15px;
+	background-color: #FFBFEF;
+	border-radius: 25px;
+	text-align: center;
+
+}
+
+#goal-box {
+	max-width: 200px;
+	margin-left: 15px;
+	background-color: #FFBFEF;
+	border-radius: 25px;
+	text-align: center;
+}
 #record-box {
-	background background-color: #fff;
+	background-color: #FFBFEF;
+	max-width: 200px;
+	margin-top: 20px;
+	padding-top: 15px;
+	border-radius: 25px;
 }
 
 p {
