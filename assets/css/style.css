@@ -5,7 +5,7 @@ body {
 #big-container {
 	overflow: auto;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 25px;
 	max-width: 960px;
 	padding-bottom: 60px;
 	padding-top: 15px;
@@ -84,3 +84,14 @@ p {
 	font-size: 28px;
 	padding: 1px;
 }
+
+#directions	{
+
+	margin-left: 240px;
+	color: #FFBFEF;
+}
+
+
+
+
+
