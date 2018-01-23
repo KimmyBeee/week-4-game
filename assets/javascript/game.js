@@ -18,9 +18,9 @@ $("#losses").text("0");
 
 //Generates new random values for the crystals.
 	  	$("#crysone").attr("data-score", Math.floor((Math.random() * 11) + 2));
-	  	$("#crystwo").attr("data-score", Math.floor((Math.random() * 11) + 2));
+	  	$("#crystwo").attr("data-score", Math.floor((Math.random() * 11) + 3));
 	  	$("#crysthree").attr("data-score", Math.floor((Math.random() * 11) + 2));
-	  	$("#crysfour").attr("data-score", Math.floor((Math.random() * 11) + 2));
+	  	$("#crysfour").attr("data-score", Math.floor((Math.random() * 11) + 3));
 
 //Generates new random value for the goal score.
 	  	targetScore = Math.floor((Math.random() * 101) + 19);
@@ -52,5 +52,4 @@ $("#losses").text("0");
 	resetGame();
 
 
-//Notes: make it so all crystals can't be even
 
