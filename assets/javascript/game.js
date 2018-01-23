@@ -6,32 +6,89 @@
 
 
 // Variables
+var targetScore = 0
 var wins = 0;
 var losses = 0;
 var score = 0;
-var goal = Math.floor((Math.random() * 111) + 19);
+// var crystals = ["#chrysone", "#chrystwo", "#chrysthree", "#chrysfour"];
 
-var goalUpdate = document.getElementById("goal");
-	goalUpdate.innerHTML = goal;
+    function resetGame() {
+    	$('#score').text('');
+	  $('#crysone').attr('data-score', Math.floor(Math.random() * 11) + 2);
+	  $('#crystwo').attr('data-score', Math.floor(Math.random() * 11) + 2);
+	  $('#crysthree').attr('data-score', Math.floor(Math.random() * 11) + 2);
+	  $('#crysfour').attr('data-score', Math.floor(Math.random() * 11) + 2);
+	  score = 0;
+	  targetScore = Math.floor(Math.random() * 111) + 19
+	  $("#goal").text(targetScore);
+    }
 
-var winsUpdate = document.getElementById("wins");
-	winsUpdate.innerHTML = wins;
+	$('.crystal').on('click', function(){
+		// console.log($(this).attr('data-score'));
+		// console.log(targetScore)
 
-var lossesUpdate = document.getElementById("losses");
-	lossesUpdate.innerHTML = losses;
+		score += parseInt($(this).attr('data-score'));
+		$('#score').text(score)
 
-var scoreUpdate = document.getElementById("score");
-	scoreUpdate.innerHTML = score;
+		if (score === targetScore){
+			wins++;
+			alert("You Winnin'")
+			resetGame();
+		} else if (score > targetScore) {
+			losses++;
+			alert("You Losin'");
+			resetGame();
+		}
+	})
 
-//Crystals as buttons assigned a random number between 1-12
+	resetGame();
+// var chrysValue = 
+// var goal = genGoal()
+
+// function genGoal() {
+// 	return Math.floor((Math.random() * 111) + 19);
+// 	console.log(genGoal);
+// }
+
+
+// var goalUpdate = document.getElementById("goal");
+// 	goalUpdate.innerHTML = goal;
+
+// var winsUpdate = document.getElementById("wins");
+// 	winsUpdate.innerHTML = wins;
+
+// var lossesUpdate = document.getElementById("losses");
+// 	lossesUpdate.innerHTML = losses;
+
+// var scoreUpdate = document.getElementById("score");
+// 	scoreUpdate.innerHTML = score;
+
+
 //Create an variables for images
-function getValue() {
-	var crystalBtn = $(".crystal");
-	var randomValue = Math.floor(Math.random() * 11) + 1;
-	crystalBtn.addClass("value");
-	crystalBtn.attr("data-value", randomValue);
-	console.log(randomValue);
-}
+
+// function addScore()	{
+
+// }
+
+// //This goes in reset!
+// function gameReset() {
+
+// //Re-generate random value to crystals
+// 		goal = genGoal;
+		
+// //Crystals as buttons assigned a random number between 1-12
+// 	function crystalReset()	{
+// 		var crystalBtn = $(".crystal");
+// 		var randomValue = Math.floor(Math.random() * 11) + 1;
+// 		crystalBtn.addClass("value");
+// 		crystalBtn.attr("data-value", randomValue);
+// 		console.log(randomValue);
+// 		}
+
+// 	// function recordReset()
+
+// 	// function scoreReset()
+// }
 
 
 
@@ -46,12 +103,8 @@ function getValue() {
 // }
 
 
-
-
-
-
  // Function that updates the score...
       // function updateScore() {
       //   document.querySelector("#score").innerHTML = "Score: " + score;
       // } 
-
+// initialize gameReset();
